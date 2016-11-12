@@ -8,13 +8,17 @@ using Microsoft.WindowsAzure.MobileServices;
 
 namespace AgendaDemo
 {
-    public class Agenda
+    //estructura de datos de la tabla
+    public class AgendaSerchs
     {
+        //variables locales
         string id;
         string nombre;
         string apellido;
         string telefono;
+
         [JsonProperty(PropertyName = "id")]
+        //variables publicas
         public string Id
         {
             get { return id; }
